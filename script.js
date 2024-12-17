@@ -86,43 +86,43 @@ console.log(person2);
 //     }
 // };
 
-function show(){
-    //local outer variable
-    var a="a is local outer varible";
-    document.write(a+"<br>");
-    console.log(a);
+// function show(){
+//     //local outer variable
+//     var a="a is local outer varible";
+//     document.write(a+"<br>");
+//     console.log(a);
 
-    function disk(){
-        var b="b is local outer variable";
-        document.write(b+"<br>");
-        console.log(b);
-    }
-    disk();
-}
-show();
-// console.log(show());
+//     function disk(){
+//         var b="b is local outer variable";
+//         document.write(b+"<br>");
+//         console.log(b);
+//     }
+//     disk();
+// }
+// show();
+// // console.log(show());
 
-var name ="John";
-function first(){
-    var a="hello";
-    second();
-    var x = a + name;
-    console.log(x);
+// var name ="John";
+// function first(){
+//     var a="hello";
+//     second();
+//     var x = a + `$("name")`;
+//     console.log(x);
 
-}
-function second(){
-    var b="Hi!!";
-    third();
-    var z= b + name;
-    console.log(z);
+// }
+// function second(){
+//     var b="Hi!!";
+//     third();
+//     var z= b + name;
+//     console.log(z);
 
-}
-function third(){
-    var c = "Hey!!";
-    var y= c + name;
-    console.log(y);
-}
-first();
+// }
+// function third(){
+//     var c = "Hey!!";
+//     var y= c + name;
+//     console.log(y);
+// }
+// first();
 
 var age = 20;
 if(age>18){
@@ -130,10 +130,73 @@ if(age>18){
 
 }
 else{
-    document.write("<b>You are not eligible</b>");
+    document.write("<b>You are not eligible</b>\n");
+}
+
+var grade = "C";
+document.write("<br> entering the switch block");
+switch(grade){
+    case "A":
+        console.log("Good job");
+        break;
+    case "B":
+        console.log("preety good");
+        break;
+    case "C":
+        console.log("Passed");
+        break;
+    case "E":
+        console.log("Fail!!!");
+        break;
+    default :
+    console.log("Unknown Grade");
+
+}
+
+var i;
+for(i=0;i<3;i=i+1){
+    console.log(i);
 }
 
 
+var count;
+document.write("<br>Starting Loop :--- <br>");
+for(count = 0;count<10;count++){
+    document.write("Current count : " , count);
+    document.write("<br>");
+}
+document.write("Loop stop");
 
 
+var i;
+document.write("<br> Printing the even number between 100<br>");
 
+for(i=0;i<100;i++){
+    if(i%2==0){
+        document.write("This is a even number: \t",i,"<br>");        
+    }
+}
+
+document.write("<br> Using a Array <br>")
+var myArray=["A","B","C"];
+for(var i =0;i < myArray.length;i++){
+    document.write("The member of myArray is index :"+i+ " is " + myArray[i]);
+    document.write("<br>");
+}
+
+document.write("<br><br>Now We Are Entering While Loops now");
+var cnt =0;
+while(cnt < 10){
+    document.write("Current count: " + cnt + "<br>")
+    cnt++;
+}
+
+document.write("<br><br>");
+
+function sayhii(){
+    alert("HHHHHHeeeeeeellllllllllllllloooooo");
+}
+
+function saying(name , age){
+    console.log(name + "is" + age);
+}
