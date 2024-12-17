@@ -198,5 +198,5 @@ function sayhii(){
 }
 
 function saying(name , age){
-    console.log(name + "is" + age);
+    document.write(name + "is " + age);
 }
