@@ -200,3 +200,14 @@ function sayhii(){
 function saying(name , age){
     document.write(name + "is " + age);
 }
+
+function toggleText() {
+    const messageElement = document.getElementById('message');
+    if (messageElement.textContent === 'Click a button to perform an action!') {
+        messageElement.textContent = 'Text has been toggled!';
+        messageElement.style.color = 'red';
+    } else {
+        messageElement.textContent = 'Click a button to perform an action!';
+        messageElement.style.color = 'black';
+    }
+}
