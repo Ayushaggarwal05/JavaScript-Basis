@@ -159,37 +159,37 @@ for(i=0;i<3;i=i+1){
 }
 
 
-var count;
-document.write("<br>Starting Loop :--- <br>");
-for(count = 0;count<10;count++){
-    document.write("Current count : " , count);
-    document.write("<br>");
-}
-document.write("Loop stop");
+// var count;
+// document.write("<br>Starting Loop :--- <br>");
+// for(count = 0;count<10;count++){
+//     document.write("Current count : " , count);
+//     document.write("<br>");
+// }
+// document.write("Loop stop");
 
 
-var i;
-document.write("<br> Printing the even number between 100<br>");
+// var i;
+// document.write("<br> Printing the even number between 100<br>");
 
-for(i=0;i<100;i++){
-    if(i%2==0){
-        document.write("This is a even number: \t",i,"<br>");        
-    }
-}
+// for(i=0;i<100;i++){
+//     if(i%2==0){
+//         document.write("This is a even number: \t",i,"<br>");        
+//     }
+// }
 
-document.write("<br> Using a Array <br>")
-var myArray=["A","B","C"];
-for(var i =0;i < myArray.length;i++){
-    document.write("The member of myArray is index :"+i+ " is " + myArray[i]);
-    document.write("<br>");
-}
+// document.write("<br> Using a Array <br>")
+// var myArray=["A","B","C"];
+// for(var i =0;i < myArray.length;i++){
+//     document.write("The member of myArray is index :"+i+ " is " + myArray[i]);
+//     document.write("<br>");
+// }
 
-document.write("<br><br>Now We Are Entering While Loops now");
-var cnt =0;
-while(cnt < 10){
-    document.write("Current count: " + cnt + "<br>")
-    cnt++;
-}
+// document.write("<br><br>Now We Are Entering While Loops now");
+// var cnt =0;
+// while(cnt < 10){
+//     document.write("Current count: " + cnt + "<br>")
+//     cnt++;
+// }
 
 document.write("<br><br>");
 
@@ -211,3 +211,72 @@ function toggleText() {
         messageElement.style.color = 'black';
     }
 }
+
+
+// Dates in JavaScript
+
+const d = new Date("2015-03-25"); // ISO format
+// console.log(d.getFullYear());
+
+const dd = new Date("03/25/2015")
+// console.log(dd);
+
+
+let msec = Date.parse("March 21,2012");
+const day = new Date("msec");
+// console.log(msec);
+// console.log(day);
+
+
+const dayss = ["Sunday", "Monday","Tuesday","wednesday","Thrusday","Friday","Saturday"];
+const da = new Date();
+let each = dayss[da.getDay(4)];
+// console.log(d);
+
+const s = new Date();
+// s.setDate(s.getDate() + 50);
+s.setSeconds(50);
+// console.log(s);
+
+
+
+let text = "";
+const today = new Date();
+const someday = new Date();
+someday.setFullYear(2100,0,14);
+
+if(someday > today){
+    text = "Today is before 14 January 2100";
+    // console.log(text);
+}
+else{
+    text = "Today is after 14 January 2100";
+    // console.log(text);
+}
+
+console.log(Math.floor(-4.2));
+console.log(Math.ceil(-4.2));
+console.log(Math.trunc(-4.2));
+console.log(Math.sign(-4.2));
+console.log(Math.pow(8,5));
+console.log(Math.sqrt(4));
+console.log(Math.abs(-4.5));
+console.log(Math.min(0,5,6,3,2,2,4,5,6,6,6,6,-9));
+console.log(Math.log10(3574));
+console.log(Math.floor(Math.random()*100));       //0-99
+console.log(Math.floor(Math.random()*100) + 1);   // 1-99
+
+function getRndIntergers(min,max){
+    return Math.floor(Math.random()*(max-min)) + min;
+}
+
+console.log(getRndIntergers(1,100));
+
+// var Element = document.getElementById("divelement");
+// Element.innerHTML = "This going to print in my ht,l by using Javascript";
+
+
+let k = "Visit ABESEC";
+let p = k.search("ABESEC");
+console.log(p);
+

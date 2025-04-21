@@ -4,31 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>  
+    <style>
+        html{
+            background-color: rgb(135, 134, 134);
+            color: azure;
+        }
+        ::marker{
+            color: red;
+            font-size: 23px;
+        }
+        q:lang(no){
+            quotes: "~""~";
+        }
+        footer{
+            justify-content:center;
+        }
+        p.intro::first-line{
+            color: rgb(255, 255, 255);
+            background: #d74279;
+        }
+        h1::before{
+            content: url(pics/planet.png);
+        }
+    </style>
 </head>
 <body>
     <input type="button" onclick="sayHello()" value="Say Hello">
 
-    <p>CLick the button to create a variable,and display the result</p>
+    <p>CLick the <strong>button</strong> to create a variable,and display the result</p>
     <button onclick="myfunction()">Try it</button>
     <p id="demo"></p>
-
-    <script src="script.js"></script>
-
-
+    
     <button onclick="sayhii()">Hellllooo</button>
-
+    
     <br>
     <p>Click the butoon to call a function </p>
     <form >
         <input type="button" onclick="saying('Ayush ',20)" value="say hello">
     </form>
     <p>Use a differnt parameter to the function and then try:))</p>
-
-
+    
+    
     <p id="message">Click a button to perform an action!</p>
     <button onclick="toggleText()">Toggle Text</button>
 
+    
+    <p>Some text <q lang="no"> A qoute in a paragraph</q>  Some text.</p>
+
+    <p class="intro">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem deleniti quisquam, praesentium eius recusandae ea ex autem ipsum dignissimos, accusamus, veritatis libero vero cumque delectus impedit repudiandae voluptatum dolor. Assumenda?
+        Magni veritatis ab ratione aut aliquam ea cupiditate consequatur vero optio necessitatibus veniam provident cum corrupti nostrum alias quis expedita, nulla architecto dolores fugit, voluptatum quam praesentium quasi blanditiis? Ut!
+        Modi dignissimos dolorem ratione consequatur cupiditate officiis totam asperiores, quae iusto ipsa, eaque voluptatum vitae quaerat vel vero amet non. Laborum sed alias autem architecto nam. Mollitia id rem voluptas!
+        Delectus nostrum sed sint repellat pariatur excepturi quibusdam, fugit tempore adipisci inventore omnis dolor alias quia molestiae aspernatur. Fugit incidunt magnam autem! Expedita laudantium, id sequi harum at iste sit.
+        A saepe harum nulla sed esse, alias minus unde quae pariatur vitae eum cum laborum aspernatur! Eos nulla molestias sed sequi eum odio in. Tempore nihil itaque soluta et praesentium!\
+    </p>
+
+    <footer>
+        <p>&copy <q lang="no">This a safe and copywrite free</q></p>
+    </footer>
 
 
+    
+    
+    <script src="script.js"></script>
+
+
+    
+    
 </body>
 </html>
